@@ -45,8 +45,8 @@ var gameStart = function(){
       checkWin();
       turn ===1;
       compMove();
-     checkBoard();
-     checkWin();
+      checkBoard();
+      checkWin();
     }
   });
 };
@@ -73,8 +73,7 @@ compMove = function(){
  } else if(k1=== human && k2 === human) {
    $("#k3").text(computer);
    turn=0;
- }else{
-   $("#k6").text(computer);
+ }else {
    turn=0;
  }
 };
@@ -109,25 +108,29 @@ else if((k1==="o" && k2 ==="o" && k3==="o")
   
 // show alert with winnter info! 
 winAlert = function(){
-  if("o"===human){
-    alert("You won");
+  if(xWin == true){
+      if("x" == human){
+          alert("You won");
+      } else {
+          alert("Computer won");
+      }
+      turn == 0;
+  }else if(oWin=true){
+      if("o" == human){
+          alert("You won");
+      } else {
+          alert("Computer won");
+      }
+       turn == 0;
+      
+  };
     clearGame();
-  } else {
-    alert("Computer won");
-    clearGame();
-  }
-  
-  if("x" === human){
-    alert("You won");
-    clearGame();
-  } else {
-    alert("Computer won");
-    clearGame();
-  }
 };
-  
+    
+    
 // clear game. 
-var clearGame = function(){
-  $("td").text("");
+clearGame = function(){
+ $("td").text("");
+  gameStart();
 };
 };
