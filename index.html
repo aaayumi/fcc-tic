@@ -8,52 +8,56 @@
  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
 <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
 
-      <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
     
 </head>
 <body>
     
-<!--selection -->
-<div id="select"><p>
-Let's play TIC TAC TOE game!<br>
-Which one do you like?   
+<div id="select" class="container">
+ <div class="row">
+<div class="col-sm-12"> 
+<p>
+  Which one do you like?</p>  
 <button class="btn1">
 O</button>
 <button class="btn2">
 X</button>
-</p>
 </div>
-
+</div>
+  </div>
 <!--tic tac toe  -->
-<div class="container">
+<div id="game" class="container">
 <div class="row">
 <div class="col-sm-12">
     
 <table>
     
 <tr>
-    <td id="1" class="key"></td>
-    <td id="2" class="key"></td>
-    <td id="3" class="key"></td>
+    <td id="k1" class="key"></td>
+    <td id="k2" class="key"></td>
+    <td id="k3" class="key"></td>
 </tr>
     
 <tr>
-    <td id="4" class="key"></td>
-    <td id="5" class="key"></td>
-    <td id="6" class="key"></td>
+    <td id="k4" class="key"></td>
+    <td id="k5" class="key"></td>
+    <td id="k6" class="key"></td>
 </tr>
     
 <tr>
-    <td id="7" class="key"></td>
-    <td id="8" class="key"></td>
-    <td id="9" class="key"></td>
-</tr>
+    <td id="k7" class="key"></td>
+    <td id="k8" class="key"></td>
+    <td id="k9" class="key"></td>
     
     
 </table>
 </div>
 </div>
 </div>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
     
     </body>
 </html>
