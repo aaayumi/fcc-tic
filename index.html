@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
-<title>Tic Tac Toe Game</title>
-<meta charset="utf-8">
+  <meta charset="UTF-8">
+  <title>tic tac toe game  test</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
 
-<!--CSS-->
- <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css'>
-<link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
+      <link rel="stylesheet" href="css/style.css">
 
-<link rel="stylesheet" href="style.css">
-    
+  
 </head>
+
 <body>
-    
-<div id="select" class="container">
+  <div id="select" class="container">
  <div class="row">
 <div class="col-sm-12"> 
 <p>
   Which one do you like?</p>  
-<button class="btn1">
+<button id ="o" class="btn1" onClick="setUp(this.id)">
 O</button>
-<button class="btn2">
+<button id = "x" class="btn2" onClick="setUp(this.id)">
 X</button>
 </div>
 </div>
@@ -33,31 +33,30 @@ X</button>
 <table>
     
 <tr>
-    <td id="k1" class="key"></td>
-    <td id="k2" class="key"></td>
-    <td id="k3" class="key"></td>
+    <td id="1" onClick="key(this.id)" ></td>
+    <td id="2" onClick="key(this.id)"></td>
+    <td id="3" onClick="key(this.id)" ></td>
 </tr>
     
 <tr>
-    <td id="k4" class="key"></td>
-    <td id="k5" class="key"></td>
-    <td id="k6" class="key"></td>
+    <td id="4" onClick="key(this.id)" ></td>
+    <td id="5" onClick="key(this.id)" ></td>
+    <td id="6" onClick="key(this.id)" ></td>
 </tr>
     
 <tr>
-    <td id="k7" class="key"></td>
-    <td id="k8" class="key"></td>
-    <td id="k9" class="key"></td>
+    <td id="7" onClick="key(this.id)"  ></td>
+    <td id="8" onClick="key(this.id)" ></td>
+    <td id="9" onClick="key(this.id)" ></td>
     
     
 </table>
 </div>
 </div>
 </div>
-    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="index.js"></script>
-    
-    </body>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
 </html>
